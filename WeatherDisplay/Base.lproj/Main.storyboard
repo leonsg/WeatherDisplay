@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vi3-uL-uf0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKN-IL-IXM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RcB-Nd-kt8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6CH-X0-SGd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bKN-IL-IXM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0K9-f4-Qw1"/>
+                            <constraint firstItem="bKN-IL-IXM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BjS-8q-PTc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bKN-IL-IXM" secondAttribute="bottom" id="GtR-1F-i7G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKN-IL-IXM" secondAttribute="trailing" id="Htu-Jg-xPc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hOf-JX-gK0">
+                        <barButtonItem key="rightBarButtonItem" title="Country" id="ydO-og-ZTW">
+                            <connections>
+                                <segue destination="Rey-hp-giA" kind="presentation" identifier="selectCountry" modalPresentationStyle="overCurrentContext" id="4nF-vK-fpx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="bKN-IL-IXM" id="LtU-jb-wCv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="734"/>
+        </scene>
+        <!--Custom Picker View-->
+        <scene sceneID="4qN-Gh-mAc">
+            <objects>
+                <viewController storyboardIdentifier="CustomPickerView" id="Rey-hp-giA" customClass="CustomPickerView" customModule="WeatherDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="7tE-3a-5ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-kP-POh">
+                                <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rey-hp-giA" id="xd0-KH-tXw"/>
+                                    <outlet property="delegate" destination="Rey-hp-giA" id="gH1-Ya-Q8W"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="obQ-kP-POh" firstAttribute="leading" secondItem="NUG-z8-RZe" secondAttribute="leading" id="5Zb-qa-5XS"/>
+                            <constraint firstAttribute="bottom" secondItem="obQ-kP-POh" secondAttribute="bottom" id="q6Q-Gk-dct"/>
+                            <constraint firstItem="obQ-kP-POh" firstAttribute="trailing" secondItem="NUG-z8-RZe" secondAttribute="trailing" id="snq-4t-ycU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NUG-z8-RZe"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="obQ-kP-POh" id="FFR-Ml-q6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBI-F5-oX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="734"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2R4-qK-UH5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vi3-uL-uf0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dwd-dN-BnQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7fp-Ve-9UN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgK-hf-aUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="733.92857142857144"/>
+        </scene>
+    </scenes>
+</document>

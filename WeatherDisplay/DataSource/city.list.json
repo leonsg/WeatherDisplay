@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1880251,
+    "name": "Republic of Singapore",
+    "country": "SG",
+    "coord": {
+      "lon": 103.800003,
+      "lat": 1.36667
+    }
+  },
+  {
+    "id": 1880755,
+    "name": "Bright Hill Crescent",
+    "country": "SG",
+    "coord": {
+      "lon": 103.833328,
+      "lat": 1.35
+    }
+  },
+  {
+    "id": 1882558,
+    "name": "Thomson Park",
+    "country": "SG",
+    "coord": {
+      "lon": 103.836388,
+      "lat": 1.35722
+    }
+  },
+  {
+    "id": 6179560,
+    "name": "Westville",
+    "country": "CA",
+    "coord": {
+      "lon": -62.71534,
+      "lat": 45.566849
+    }
+  },
+  {
+    "id": 1152631,
+    "name": "Changwat Krabi",
+    "country": "TH",
+    "coord": {
+      "lon": 99.166672,
+      "lat": 8.25
+    }
+  },
+  {
+    "id": 1156778,
+    "name": "Ban Krabi Yai",
+    "country": "TH",
+    "coord": {
+      "lon": 98.916672,
+      "lat": 8.1
+    }
+  },
+  {
+    "id": 6538691,
+    "name": "Ciampino",
+    "country": "IT",
+    "coord": {
+      "lon": 12.60658,
+      "lat": 41.80162
+    }
+  },
+  {
+    "id": 3178738,
+    "name": "Ciampino",
+    "country": "IT",
+    "coord": {
+      "lon": 12.60658,
+      "lat": 41.80162
+    }
+  },
+  {
+    "id": 2958376,
+    "name": "Allershausen",
+    "country": "DE",
+    "coord": {
+      "lon": 11.6,
+      "lat": 48.433331
+    }
+  },
+  {
+    "id": 2268337,
+    "name": "Distrito de Faro",
+    "country": "PT",
+    "coord": {
+      "lon": -8.16667,
+      "lat": 37.200001
+    }
+  },
+  {
+    "id": 8010519,
+    "name": "Loulé",
+    "country": "PT",
+    "coord": {
+      "lon": -8.05432,
+      "lat": 37.190842
+    }
+  },
+  {
+    "id": 8012006,
+    "name": "Quarteira",
+    "country": "PT",
+    "coord": {
+      "lon": -8.10469,
+      "lat": 37.08514
+    }
+  },
+  {
+    "id": 6545006,
+    "name": "Vilamoura",
+    "country": "PT",
+    "coord": {
+      "lon": -8.11083,
+      "lat": 37.081001
+    }
+  },
+  {
+    "id": 5956016,
+    "name": "Fort William",
+    "country": "CA",
+    "coord": {
+      "lon": -52.714741,
+      "lat": 47.57209
+    }
+  },
+  {
+    "id": 2648402,
+    "name": "Gloucestershire",
+    "country": "GB",
+    "coord": {
+      "lon": -2.16667,
+      "lat": 51.833328
+    }
+  },
+  {
+    "id": 7290548,
+    "name": "Cheltenham District",
+    "country": "GB",
+    "coord": {
+      "lon": -2.07522,
+      "lat": 51.898129
+    }
+  },
+  {
+    "id": 2636388,
+    "name": "Swindon",
+    "country": "GB",
+    "coord": {
+      "lon": -2.09581,
+      "lat": 51.922619
+    }
+  }
+]
